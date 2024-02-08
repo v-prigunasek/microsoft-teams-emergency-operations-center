@@ -64,7 +64,9 @@
         "follow-redirects": ">=1.14.8",
         "@restart/ui": "1.4.1",        
         "@react-pdf/pdfkit": "3.0.2",
-        "@react-pdf/image" :"2.2.1"
+        "@react-pdf/image" :"2.2.1",
+        "botbuilder": "4.19.2",
+        "botbuilder-dialogs": "4.19.2"
     },
     "devDependencies": {
         "@babel/traverse": ">=7.23.2",
