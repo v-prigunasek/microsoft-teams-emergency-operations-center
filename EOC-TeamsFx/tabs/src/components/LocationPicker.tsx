@@ -253,14 +253,15 @@ export class LocationPicker extends React.Component<ILocationPickerProps, ILocat
     //method to get bearer token for location picker API
     private async getOutlookToken(): Promise<void> {
         const credential = new TeamsUserCredential();
-        const token = await credential.getToken(constants.defaultOutlookBaseURL);
+        const token = await credential.getToken(this.props.graphBaseUrl !== constants.defaultGraphBaseURL ? constants.defaultOutlookBaseURLGCCH : constants.defaultOutlookBaseURL);
         this._token = token?.token;
     }
 
     ///method to get locations using outlook API
     private async getLocations(searchText: any): Promise<void> {
         try {
-            fetch(constants.outlookAPIFindLocations, {
+            let locationAPIUrl = this.props.graphBaseUrl !== constants.defaultGraphBaseURL ? constants.outlookAPIFindLocationsGCCH : constants.outlookAPIFindLocations;
+            fetch(locationAPIUrl, {
                 method: 'post',
                 headers: new Headers({
                     "Content-type": "application/json",

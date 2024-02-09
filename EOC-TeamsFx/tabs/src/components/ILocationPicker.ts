@@ -38,6 +38,7 @@ export interface ILocationPickerProps {
     errorMessage?: string;
     appInsights: ApplicationInsights;
     userPrincipalName: any;
+    graphBaseUrl: any;
 }
 
 export interface ILocationPickerState {

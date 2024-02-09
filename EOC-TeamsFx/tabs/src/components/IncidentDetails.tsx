@@ -4334,6 +4334,7 @@ class IncidentDetails extends React.PureComponent<IIncidentDetailsProps, IIncide
                                                             placeholder={this.props.localeStrings.phLocation}
                                                             appInsights={this.props.appInsights}
                                                             userPrincipalName={this.props.userPrincipalName}
+                                                            graphBaseUrl={this.props.graphBaseUrl}
                                                         />
                                                         {this.state.inputValidation.incidentLocationHasError && (
                                                             <label aria-live="polite" role="alert" className="message-label">{this.props.localeStrings.locationRequired}</label>
