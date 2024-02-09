@@ -132,8 +132,8 @@ export const bingMapsKey = "BingMapsKey";
 export const teamNameConfig = "TeamNameConfig";
 
 //location picker
-export const defaultOutlookBaseURL = "https://outlook.office.com/.default";
-export const outlookAPIFindLocations = "https://outlook.office365.com/SchedulingB2/api/v1.0/me/findmeetinglocations";
+export const defaultOutlookBaseURL = "https://outlook.office.us/.default";
+export const outlookAPIFindLocations = "https://outlook.office365.us/SchedulingB2/api/v1.0/me/findmeetinglocations";
 
 //Exception Codes
 export const authorizationRequestDenied = "Authorization_RequestDenied";
