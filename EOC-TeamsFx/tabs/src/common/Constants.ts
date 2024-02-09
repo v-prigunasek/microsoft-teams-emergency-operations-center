@@ -132,7 +132,7 @@ export const bingMapsKey = "BingMapsKey";
 export const teamNameConfig = "TeamNameConfig";
 
 //location picker
-export const defaultOutlookBaseURL = "https://outlook.office.us/.default";
+export const defaultOutlookBaseURL = "https://outlook.office365.us/.default";
 export const outlookAPIFindLocations = "https://outlook.office365.us/SchedulingB2/api/v1.0/me/findmeetinglocations";
 
 //Exception Codes
