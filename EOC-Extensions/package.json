@@ -51,6 +51,8 @@
     "node-releases": "^2.0.2"
   },
   "devDependencies": {
+    "browserify-sign": ">=4.2.2",
+    "@babel/traverse": ">=7.23.2",
     "@microsoft/rush-stack-compiler-3.9": "^0.4.48",
     "@microsoft/sp-build-web": "^1.14.0",
     "@microsoft/sp-module-interfaces": "1.13.0",
